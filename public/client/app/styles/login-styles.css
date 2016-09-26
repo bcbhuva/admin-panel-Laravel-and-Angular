@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
+body {
+  font-family: 'Gudea', sans-serif;
+  background: #EA5C54;
+  background: #4776E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4776E6 , #8E54E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+body ::-webkit-input-placeholder {
+  color: #4E546D;
+}
+.login {
+  /*background-color: #242734;*/
+  background-color: #212E41;
+  width: 300px;
+  height: 350px;
+  margin: 5% auto;
+  border-top: 3px solid #7D7EEB;
+  /*border-top: 3px solid #D4262A;*/
+
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login .logo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.login .logo img{
+  width: 90%;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+.login .acceso {
+  text-align: center;
+  color: #9D9FAC;
+  font-size: 15px;
+}
+.form {
+  margin-top: 20px;
+}
+.footer {
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(250, 250, 250, 0.15);
+  text-align: center;
+  font-size: 11px;
+}
+.footer a{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.dev-logos {
+  display: inline-block;
+  width: 10%;
+}
+.dev-logos img{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+   filter: grayscale(100%);
+   -webkit-transition: all 1s ease;
+         -moz-transition: all 0.15s ease;
+           -o-transition: all 0.15s ease;
+          -ms-transition: all 0.15s ease;
+              transition: all 0.15s ease;
+}
+.dev-logos img:hover{
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+   filter: grayscale(0%);
+}
+
+.form .name-input{
+  height: 40px;
+  /*background-color: #32364A;*/
+  background-color: #2a394f;
+  border-top: solid 3px #393D52;
+  text-align: center;
+}
+.form .name-input input{
+  vertical-align: middle;
+  width: 80%;
+  margin: 10px auto;
+  background: transparent;
+  border: none;
+  color: #9D9FAC;
+  font-size: 14px;
+}
+.form .name-input input:focus{
+  outline: none;
+}
+.form label{
+  position:relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.form .pass-input{
+  height: 40px;
+  /*background-color: #32364A;*/
+  background-color: #2a394f;
+  border-top: solid 3px #393D52;
+  border-bottom: solid 3px #393D52;
+  text-align: center;
+}
+
+.form .pass-input input{
+  vertical-align: middle;
+  width: 80%;
+  margin: 10px auto;
+  background: transparent;
+  border: none;
+  color: #638AEA;
+  font-size: 14px;
+}
+
+.form .pass-input input:focus{
+  outline: none;
+}
+.form .button-submit {
+  height: 70px;
+  text-align: center;
+}
+.form .button-submit button {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  border: solid 2px #7D7EEB;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 11px;
+  color: #7D7EEB;
+  -webkit-transition: all 1s ease;
+        -moz-transition: all 0.15s ease;
+          -o-transition: all 0.15s ease;
+         -ms-transition: all 0.15s ease;
+             transition: all 0.15s ease;
+}
+.form .button-submit button:hover {
+  background: #7D7EEB;
+  color: white;
+}
+.form .button-submit button:focus {
+  outline: none;
+}
+/* fondo autocompletar de chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}

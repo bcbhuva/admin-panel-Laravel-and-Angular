@@ -1,0 +1,146 @@
+<div style="width: 225px; display: inline-block; position:fixed;">
+  <div class='swanky_wrapper'>
+      <input id='Dashboard' name='radio' type='radio'>
+      <label for='Dashboard'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png'>
+        <span>Dashboard</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <a href="siteadmin#/login1"><li>Tools</li></a>
+            <a href="siteadmin#/login2"><li>Reports</li></a>
+            <a href="siteadmin#/login3"><li>Analytics</li></a>
+            <a href="siteadmin#/login4"><li>Code Blocks</li></a>
+          </ul>
+        </div>
+      </label>
+      <input id='Sales' name='radio' type='radio'>
+      <label for='Sales'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/del.png'>
+        <span>Sales</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <a href="siteadmin#/login"><li>New Sales</li></a>
+            <a href="siteadmin#/login"><li>Expired Sales</li></a>
+            <a href="siteadmin#/login"><li>Sales Reports</li></a>
+            <a href="siteadmin#/login"><li>Deliveries</li></a>
+          </ul>
+        </div>
+      </label>
+      <input id='Messages' name='radio' type='radio'>
+      <label for='Messages'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mess.png'>
+        <span>Messages</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <a href="siteadmin#/login"><li>Inbox</li></a>
+            <a href="siteadmin#/login"><li>Outbox</li></a>
+            <a href="siteadmin#/login"><li>Sent</li></a>
+            <a href="siteadmin#/login"><li>Archived</li></a>
+          </ul>
+        </div>
+      </label>
+      <input id='Users' name='radio' type='radio'>
+      <label for='Users'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/users.png'>
+        <span>Users</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <a href="siteadmin#/login"><li>New User</li></a>
+            <a href="siteadmin#/login"><li>User Groups</li></a>
+            <a href="siteadmin#/login"><li>Permissions</li></a>
+            <a href="siteadmin#/login"><li>Passwords</li></a>
+          </ul>
+        </div>
+      </label>
+      <input id='Settings' name='radio' type='radio'>
+      <label for='Settings'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/set.png'>
+        <span>Settings</span>
+        <div class='lil_arrow'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <a href="siteadmin#/login"><li>Databases</li></a>
+            <a href="siteadmin#/login"><li>Design</li></a>
+            <a href="siteadmin#/login"><li>Change User</li></a>
+            <a ng-click="main.logout()" href="siteadmin#/login"><li>Log Out</li></a>
+          </ul>
+        </div>
+      </label>
+    </div>
+</div>
+<div style="padding-left:250px; width:100%; box-sizing: border-box;">
+  <div class="">
+    <div id="wrap">
+      <h1>
+        Index
+      </h1>
+      <form action="" autocomplete="on">
+      <input id="search" name="search" type="text" placeholder="¿Qué quieres encontrar?"><input id="search_submit" value="Rechercher" type="submit">
+      </form>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <th>
+        Thumbnail
+      </th>
+      <th>
+        Indexer
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Duration
+      </th>
+      <th>
+        Opciones
+      </th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="video in videos">
+        <td class="thumb_td">
+          <img src="http://getuikit.com/docs/images/placeholder_600x400.svg" alt="{{video.title}}" />
+        </td>
+        <td>
+          {{video.indexer}}
+        </td>
+        <td>
+          {{video.title}}
+        </td>
+        <td>
+          {{video.video_length}}
+        </td>
+        <td>
+          Editar Eliminar
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="">
+      <ul class="pagination" role="menubar" aria-label="Pagination">
+      <li><a href=""><span>First</span></a></li>
+      <li><a href=""><span>Previous</span></a></li>
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li class="current"><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">9</a></li>
+      <li><a href="">10</a></li>
+      <li><a href=""><span>Next</span></a></li>
+      <li><a href=""><span>Last</span></a></li>
+    </ul>
+  </div>
+</div>
